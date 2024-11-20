@@ -93,6 +93,9 @@ class ProfCoursTest extends TestCase
             new Cours("Cours7", "3", 5),       // idcours = 7   ** A SUPPRIMER **
             new Cours("Cours8", "4", 5),       // idcours = 8
             new Cours("Cours9", "3", 5),        // idcours = 9   ** A MODIFIER **
+            new Cours("IoT",10,1), //new demander pour TP
+            new Cours("IA", 12, 3), //new
+            new Cours("EDL", 5 ,6),
             
             /**
             *
@@ -177,7 +180,7 @@ class ProfCoursTest extends TestCase
         // Cours
         
         print "ADD cours\n";
-        foreach (self::$cours_a as $cours) {
+        foreach (self::$cours_a as $cours) { //fait pour chaque déjà
             $cours->add($conn);
         }
         
@@ -216,7 +219,7 @@ class ProfCoursTest extends TestCase
         *
         * Question 9 : Dans la fonction « testPrintAll() », 
         * s’inspirer de test de la sélection et affichage des profs pour tester la sélection et l’affichage des cours.   
-        *
+        * mais le fait pour chaque
         */
   
         
